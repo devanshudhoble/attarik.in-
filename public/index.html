@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATTARIK — The Art of Scent | Premium Luxury Fragrances</title>
+    <meta name="description" content="ATTARIK — Discover the art of scent. Premium luxury fragrances crafted with rare ingredients and timeless artistry. Experience elegance in every note.">
+    <meta name="keywords" content="ATTARIK, luxury fragrance, perfume, attar, premium scent, India, oud, rose, musk">
+    <meta property="og:title" content="ATTARIK — The Art of Scent">
+    <meta property="og:description" content="Premium luxury fragrances crafted with rare ingredients and timeless artistry.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://attarik.in">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo">ATTARIK</div>
+            <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+            <div class="preloader-text">Loading Experience...</div>
+        </div>
+    </div>
+
+    <!-- Cursor Glow -->
+    <div id="cursor-glow"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo" id="nav-logo">
+                <span class="logo-text">ATTARIK</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#collection" class="nav-link" data-section="collection">Collection</a></li>
+                <li><a href="#scent-finder" class="nav-link" data-section="scent-finder">Find Your Scent</a></li>
+                <li><a href="#craftsmanship" class="nav-link" data-section="craftsmanship">Craftsmanship</a></li>
+                <li><a href="#testimonials" class="nav-link" data-section="testimonials">Reviews</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="https://www.instagram.com/attarik.in" target="_blank" rel="noopener" class="nav-social" id="nav-instagram" aria-label="Instagram">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                </a>
+                <a href="tel:+918787088432" class="nav-cta" id="nav-call-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <span>Call Us</span>
+                </a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <img src="images/hero-bg.png" alt="" class="hero-bg-img">
+            <div class="hero-overlay"></div>
+        </div>
+        <canvas id="particle-canvas" class="hero-particles"></canvas>
+        <div class="hero-content">
+            <div class="hero-badge" data-animate="fade-up">
+                <span class="badge-line"></span>
+                <span>EST. 2024 — LUXURY FRAGRANCE HOUSE</span>
+                <span class="badge-line"></span>
+            </div>
+            <h1 class="hero-title" data-animate="fade-up" data-delay="200">
+                <span class="title-line">THE ART</span>
+                <span class="title-line title-italic">of</span>
+                <span class="title-line">SCENT</span>
+            </h1>
+            <p class="hero-subtitle" data-animate="fade-up" data-delay="400">Where ancient artistry meets modern elegance. Each fragrance is a journey through time, crafted with the world's rarest ingredients.</p>
+            <div class="hero-actions" data-animate="fade-up" data-delay="600">
+                <a href="#collection" class="btn btn-primary" id="hero-explore-btn">
+                    <span>Explore Collection</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#about" class="btn btn-outline" id="hero-story-btn">Our Story</a>
+            </div>
+        </div>
+        <div class="hero-scroll" data-animate="fade-up" data-delay="1000">
+            <div class="scroll-indicator">
+                <div class="scroll-dot"></div>
+            </div>
+            <span>Scroll to Discover</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="section-container">
+            <div class="about-grid">
+                <div class="about-image-col" data-animate="fade-right">
+                    <div class="about-image-wrapper">
+                        <img src="images/craftsmanship.png" alt="ATTARIK Craftsmanship" class="about-image">
+                        <div class="about-image-accent"></div>
+                        <div class="about-image-frame"></div>
+                    </div>
+                    <div class="about-stat">
+                        <span class="stat-number" data-count="50">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Rare Ingredients</span>
+                    </div>
+                </div>
+                <div class="about-text-col" data-animate="fade-left">
+                    <div class="section-label">
+                        <span class="label-line"></span>
+                        <span>Our Story</span>
+                    </div>
+                    <h2 class="section-title">Born from the Ancient<br><em>Art of Perfumery</em></h2>
+                    <p class="about-lead">ATTARIK draws from centuries of fragrance tradition, blending the mystique of ancient attar-making with contemporary artistry to create scents that transcend time.</p>
+                    <p class="about-text">Every bottle in our collection is a testament to meticulous craftsmanship. We source the finest oud from Assam, the most delicate roses from Kannauj, and the purest sandalwood from Mysore — each ingredient chosen for its unparalleled character.</p>
+                    <p class="about-text">Our master perfumers, with decades of expertise, blend these precious materials into compositions that tell stories — of moonlit gardens, ancient temples, and timeless romance.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            </div>
+                            <div>
+                                <strong>100% Authentic</strong>
+                                <span>Pure ingredients, no synthetics</span>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                            </div>
+                            <div>
+                                <strong>Long Lasting</strong>
+                                <span>12+ hours of elegant sillage</span>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                            </div>
+                            <div>
+                                <strong>Cruelty Free</strong>
+                                <span>Never tested on animals</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Section -->
+    <section id="collection" class="section collection">
+        <div class="section-container">
+            <div class="section-header" data-animate="fade-up">
+                <div class="section-label">
+                    <span class="label-line"></span>
+                    <span>The Collection</span>
+                </div>
+                <h2 class="section-title">Signature<br><em>Fragrances</em></h2>
+                <p class="section-subtitle">Each scent is a masterpiece, carefully composed to evoke emotion and leave an unforgettable impression.</p>
+            </div>
+
+            <div class="collection-grid">
+                <!-- Product 1: Noir Absolu -->
+                <div class="product-card" data-animate="fade-up" data-delay="0">
+                    <div class="product-image-wrapper">
+                        <img src="images/bottle-noir.png" alt="ATTARIK Noir Absolu" class="product-image">
+                        <div class="product-glow"></div>
+                        <div class="product-badge">Bestseller</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Noir Absolu</h3>
+                        <p class="product-category">Eau de Parfum — 50ml</p>
+                        <div class="product-notes">
+                            <div class="note-group">
+                                <span class="note-label">Top</span>
+                                <span class="note-value">Bergamot, Black Pepper</span>
+                            </div>
+                            <div class="note-group">
+                                <span class="note-label">Heart</span>
+                                <span class="note-value">Oud, Rose, Saffron</span>
+                            </div>
+                            <div class="note-group">
+                                <span class="note-label">Base</span>
+                                <span class="note-value">Amber, Musk, Vetiver</span>
+                            </div>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">₹3,499</span>
+                            <a href="https://wa.me/918787088432?text=Hi%2C%20I'm%20interested%20in%20ATTARIK%20Noir%20Absolu" target="_blank" class="btn btn-small" id="buy-noir">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2: Rose Elixir -->
+                <div class="product-card" data-animate="fade-up" data-delay="150">
+                    <div class="product-image-wrapper">
+                        <img src="images/bottle-rose.png" alt="ATTARIK Rose Elixir" class="product-image">
+                        <div class="product-glow"></div>
+                        <div class="product-badge badge-new">New</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Rose Elixir</h3>
+                        <p class="product-category">Eau de Parfum — 50ml</p>
+                        <div class="product-notes">
+                            <div class="note-group">
+                                <span class="note-label">Top</span>
+                                <span class="note-value">Pink Pepper, Lychee</span>
+                            </div>
+                            <div class="note-group">
+                                <span class="note-label">Heart</span>
+                                <span class="note-value">Damask Rose, Peony</span>
+                            </div>
+                            <div class="note-group">
+                                <span class="note-label">Base</span>
+                                <span class="note-value">Sandalwood, White Musk</span>
+                            </div>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">₹2,999</span>
+                            <a href="https://wa.me/918787088432?text=Hi%2C%20I'm%20interested%20in%20ATTARIK%20Rose%20Elixir" target="_blank" class="btn btn-small" id="buy-rose">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3: Royal Oud -->
+                <div class="product-card" data-animate="fade-up" data-delay="300">
+                    <div class="product-image-wrapper">
+                        <img src="images/bottle-oud.png" alt="ATTARIK Royal Oud" class="product-image">
+                        <div class="product-glow"></div>
+                        <div class="product-badge badge-premium">Premium</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Royal Oud</h3>
+                        <p class="product-category">Parfum Extrait — 30ml</p>
+                        <div class="product-notes">
+                            <div class="note-group">
+                                <span class="note-label">Top</span>
+                                <span class="note-value">Saffron, Cardamom</span>
+                            </div>
+                            <div class="note-group">
+                                <span class="note-label">Heart</span>
+                                <span class="note-value">Assam Oud, Incense</span>
+                            </div>
+                            <div class="note-group">
+                                <span class="note-label">Base</span>
+                                <span class="note-value">Amber, Benzoin, Leather</span>
+                            </div>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">₹4,999</span>
+                            <a href="https://wa.me/918787088432?text=Hi%2C%20I'm%20interested%20in%20ATTARIK%20Royal%20Oud" target="_blank" class="btn btn-small" id="buy-oud">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4: White Musk -->
+                <div class="product-card" data-animate="fade-up" data-delay="450">
+                    <div class="product-image-wrapper">
+                        <img src="images/bottle-musk.png" alt="ATTARIK White Musk" class="product-image">
+                        <div class="product-glow"></div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">White Musk</h3>
+                        <p class="product-category">Eau de Parfum — 50ml</p>
+                        <div class="product-notes">
+                            <div class="note-group">
+                                <span class="note-label">Top</span>
+                                <span class="note-value">Aldehydes, Lily</span>
+                            </div>
+                            <div class="note-group">
+                                <span class="note-label">Heart</span>
+                                <span class="note-value">White Musk, Jasmine</span>
+                            </div>
+                            <div class="note-group">
+                                <span class="note-label">Base</span>
+                                <span class="note-value">Cedarwood, Vanilla, Tonka</span>
+                            </div>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">₹2,499</span>
+                            <a href="https://wa.me/918787088432?text=Hi%2C%20I'm%20interested%20in%20ATTARIK%20White%20Musk" target="_blank" class="btn btn-small" id="buy-musk">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Divider -->
+    <section class="parallax-divider">
+        <div class="parallax-bg" style="background-image: url('images/hero-bg.png')"></div>
+        <div class="parallax-overlay"></div>
+        <div class="parallax-content" data-animate="fade-up">
+            <blockquote class="parallax-quote">
+                "A fragrance is like a signature — it speaks before you do, lingers after you leave."
+            </blockquote>
+            <cite>— ATTARIK Philosophy</cite>
+        </div>
+    </section>
+
+    <!-- Scent Finder Section -->
+    <section id="scent-finder" class="section scent-finder">
+        <div class="section-container">
+            <div class="section-header" data-animate="fade-up">
+                <div class="section-label">
+                    <span class="label-line"></span>
+                    <span>Interactive</span>
+                </div>
+                <h2 class="section-title">Find Your<br><em>Signature Scent</em></h2>
+                <p class="section-subtitle">Answer a few questions and discover the ATTARIK fragrance that matches your personality.</p>
+            </div>
+
+            <div class="finder-container" data-animate="fade-up">
+                <!-- Step 1 -->
+                <div class="finder-step active" id="finder-step-1">
+                    <div class="step-indicator">
+                        <div class="step-dot active"></div>
+                        <div class="step-line"></div>
+                        <div class="step-dot"></div>
+                        <div class="step-line"></div>
+                        <div class="step-dot"></div>
+                    </div>
+                    <h3 class="finder-question">What mood resonates with you?</h3>
+                    <div class="finder-options">
+                        <button class="finder-option" data-value="bold" id="mood-bold">
+                            <span class="option-emoji">🔥</span>
+                            <span class="option-text">Bold & Intense</span>
+                            <span class="option-desc">Powerful, commanding presence</span>
+                        </button>
+                        <button class="finder-option" data-value="romantic" id="mood-romantic">
+                            <span class="option-emoji">🌹</span>
+                            <span class="option-text">Romantic & Elegant</span>
+                            <span class="option-desc">Graceful, timeless beauty</span>
+                        </button>
+                        <button class="finder-option" data-value="mysterious" id="mood-mysterious">
+                            <span class="option-emoji">🌙</span>
+                            <span class="option-text">Mysterious & Deep</span>
+                            <span class="option-desc">Enigmatic, unforgettable aura</span>
+                        </button>
+                        <button class="finder-option" data-value="fresh" id="mood-fresh">
+                            <span class="option-emoji">✨</span>
+                            <span class="option-text">Fresh & Pure</span>
+                            <span class="option-desc">Clean, uplifting energy</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="finder-step" id="finder-step-2">
+                    <div class="step-indicator">
+                        <div class="step-dot completed"></div>
+                        <div class="step-line active"></div>
+                        <div class="step-dot active"></div>
+                        <div class="step-line"></div>
+                        <div class="step-dot"></div>
+                    </div>
+                    <h3 class="finder-question">When will you wear it?</h3>
+                    <div class="finder-options">
+                        <button class="finder-option" data-value="evening" id="occasion-evening">
+                            <span class="option-emoji">🌃</span>
+                            <span class="option-text">Evening Events</span>
+                            <span class="option-desc">Dinners, galas, night outs</span>
+                        </button>
+                        <button class="finder-option" data-value="daily" id="occasion-daily">
+                            <span class="option-emoji">☀️</span>
+                            <span class="option-text">Everyday Luxury</span>
+                            <span class="option-desc">Office, casual outings</span>
+                        </button>
+                        <button class="finder-option" data-value="special" id="occasion-special">
+                            <span class="option-emoji">💎</span>
+                            <span class="option-text">Special Occasions</span>
+                            <span class="option-desc">Weddings, celebrations</span>
+                        </button>
+                        <button class="finder-option" data-value="date" id="occasion-date">
+                            <span class="option-emoji">💕</span>
+                            <span class="option-text">Date Night</span>
+                            <span class="option-desc">Intimate, memorable evenings</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="finder-step" id="finder-step-3">
+                    <div class="step-indicator">
+                        <div class="step-dot completed"></div>
+                        <div class="step-line completed"></div>
+                        <div class="step-dot completed"></div>
+                        <div class="step-line active"></div>
+                        <div class="step-dot active"></div>
+                    </div>
+                    <h3 class="finder-question">What scent family draws you in?</h3>
+                    <div class="finder-options">
+                        <button class="finder-option" data-value="woody" id="family-woody">
+                            <span class="option-emoji">🌳</span>
+                            <span class="option-text">Woody & Earthy</span>
+                            <span class="option-desc">Oud, sandalwood, cedar</span>
+                        </button>
+                        <button class="finder-option" data-value="floral" id="family-floral">
+                            <span class="option-emoji">🌸</span>
+                            <span class="option-text">Floral & Soft</span>
+                            <span class="option-desc">Rose, jasmine, peony</span>
+                        </button>
+                        <button class="finder-option" data-value="oriental" id="family-oriental">
+                            <span class="option-emoji">🕌</span>
+                            <span class="option-text">Oriental & Spicy</span>
+                            <span class="option-desc">Amber, saffron, incense</span>
+                        </button>
+                        <button class="finder-option" data-value="clean" id="family-clean">
+                            <span class="option-emoji">🤍</span>
+                            <span class="option-text">Clean & Musky</span>
+                            <span class="option-desc">White musk, lily, vanilla</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Result -->
+                <div class="finder-result" id="finder-result">
+                    <div class="result-reveal">
+                        <div class="result-glow"></div>
+                        <img src="" alt="" class="result-image" id="result-image">
+                        <h3 class="result-title">Your Perfect Match</h3>
+                        <h2 class="result-name" id="result-name"></h2>
+                        <p class="result-description" id="result-description"></p>
+                        <div class="result-actions">
+                            <a href="" target="_blank" class="btn btn-primary" id="result-order-btn">
+                                <span>Order on WhatsApp</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                            </a>
+                            <button class="btn btn-outline" id="finder-restart">Try Again</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Craftsmanship Section -->
+    <section id="craftsmanship" class="section craftsmanship">
+        <div class="section-container">
+            <div class="section-header" data-animate="fade-up">
+                <div class="section-label">
+                    <span class="label-line"></span>
+                    <span>The Process</span>
+                </div>
+                <h2 class="section-title">Artisan<br><em>Craftsmanship</em></h2>
+                <p class="section-subtitle">Every ATTARIK fragrance passes through a meticulous journey from rare ingredient to bottled masterpiece.</p>
+            </div>
+
+            <div class="craft-timeline">
+                <div class="craft-step" data-animate="fade-up" data-delay="0">
+                    <div class="craft-number">01</div>
+                    <div class="craft-content">
+                        <div class="craft-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M12 22c4.97 0 9-2.69 9-6v-4c0-3.31-4.03-6-9-6S3 8.69 3 12v4c0 3.31 4.03 6 9 6z"/><path d="M3 12c0 3.31 4.03 6 9 6s9-2.69 9-6"/><path d="M12 2a4 4 0 0 1 4 4"/><path d="M8 6a4 4 0 0 1 4-4"/></svg>
+                        </div>
+                        <h3>Sourcing</h3>
+                        <p>We travel the world to handpick the rarest ingredients — Assam oud, Kannauj roses, Mysore sandalwood, and more.</p>
+                    </div>
+                </div>
+                <div class="craft-step" data-animate="fade-up" data-delay="150">
+                    <div class="craft-number">02</div>
+                    <div class="craft-content">
+                        <div class="craft-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                        </div>
+                        <h3>Blending</h3>
+                        <p>Our master perfumers compose each fragrance through hundreds of trials, achieving the perfect harmony of notes.</p>
+                    </div>
+                </div>
+                <div class="craft-step" data-animate="fade-up" data-delay="300">
+                    <div class="craft-number">03</div>
+                    <div class="craft-content">
+                        <div class="craft-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                        </div>
+                        <h3>Aging</h3>
+                        <p>Each blend is aged for weeks to months, allowing the ingredients to mature and reveal their true character and depth.</p>
+                    </div>
+                </div>
+                <div class="craft-step" data-animate="fade-up" data-delay="450">
+                    <div class="craft-number">04</div>
+                    <div class="craft-content">
+                        <div class="craft-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M8 2h8l4 10H4L8 2z"/><path d="M12 12v10"/><path d="M4 12l2 2 2-2"/><path d="M16 12l2 2 2-2"/></svg>
+                        </div>
+                        <h3>Bottling</h3>
+                        <p>Poured into handcrafted bottles, sealed with precision, and presented in luxury packaging worthy of the fragrance within.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Band -->
+    <section class="stats-band">
+        <div class="section-container">
+            <div class="stats-grid">
+                <div class="stat-item" data-animate="fade-up" data-delay="0">
+                    <span class="stat-num" data-count="50">0</span><span class="stat-num-suffix">+</span>
+                    <span class="stat-text">Rare Ingredients</span>
+                </div>
+                <div class="stat-item" data-animate="fade-up" data-delay="100">
+                    <span class="stat-num" data-count="1200">0</span><span class="stat-num-suffix">+</span>
+                    <span class="stat-text">Happy Customers</span>
+                </div>
+                <div class="stat-item" data-animate="fade-up" data-delay="200">
+                    <span class="stat-num" data-count="4">0</span>
+                    <span class="stat-text">Signature Scents</span>
+                </div>
+                <div class="stat-item" data-animate="fade-up" data-delay="300">
+                    <span class="stat-num" data-count="12">0</span><span class="stat-num-suffix">hr+</span>
+                    <span class="stat-text">Lasting Power</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials">
+        <div class="section-container">
+            <div class="section-header" data-animate="fade-up">
+                <div class="section-label">
+                    <span class="label-line"></span>
+                    <span>Reviews</span>
+                </div>
+                <h2 class="section-title">What Our<br><em>Clients Say</em></h2>
+            </div>
+
+            <div class="testimonial-slider" data-animate="fade-up">
+                <div class="testimonial-track" id="testimonial-track">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Noir Absolu is absolutely magnificent. The oud and rose combination is unlike anything I've ever experienced. It lasts the entire day and I receive compliments everywhere I go."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">R</div>
+                            <div>
+                                <strong>Rahul M.</strong>
+                                <span>Mumbai</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Rose Elixir is my signature scent now. Elegant, feminine, and the longevity is incredible. The packaging is luxurious and makes a perfect gift. ATTARIK is a hidden gem!"</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">P</div>
+                            <div>
+                                <strong>Priya S.</strong>
+                                <span>Delhi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"Royal Oud is pure class. The saffron and oud blend takes you on a journey. Worth every penny. ATTARIK has set a new standard for Indian luxury perfumery."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">A</div>
+                            <div>
+                                <strong>Arjun K.</strong>
+                                <span>Bangalore</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <p class="testimonial-text">"White Musk is incredibly versatile — perfect for office and casual wear. Clean, sophisticated, and the sillage is just right. Amazing quality at this price point."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">S</div>
+                            <div>
+                                <strong>Sneha D.</strong>
+                                <span>Pune</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-controls">
+                    <button class="slider-btn slider-prev" id="testimonial-prev" aria-label="Previous review">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    </button>
+                    <div class="slider-dots" id="testimonial-dots"></div>
+                    <button class="slider-btn slider-next" id="testimonial-next" aria-label="Next review">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section class="section instagram-section">
+        <div class="section-container">
+            <div class="section-header" data-animate="fade-up">
+                <div class="section-label">
+                    <span class="label-line"></span>
+                    <span>@attarik.in</span>
+                </div>
+                <h2 class="section-title">Follow Us on<br><em>Instagram</em></h2>
+                <p class="section-subtitle">Stay updated with our latest collections, behind-the-scenes, and fragrance tips.</p>
+            </div>
+            <div class="insta-grid" data-animate="fade-up">
+                <a href="https://www.instagram.com/attarik.in" target="_blank" rel="noopener" class="insta-item" id="insta-item-1">
+                    <img src="images/bottle-noir.png" alt="ATTARIK Instagram">
+                    <div class="insta-overlay">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/attarik.in" target="_blank" rel="noopener" class="insta-item" id="insta-item-2">
+                    <img src="images/craftsmanship.png" alt="ATTARIK Instagram">
+                    <div class="insta-overlay">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/attarik.in" target="_blank" rel="noopener" class="insta-item" id="insta-item-3">
+                    <img src="images/bottle-rose.png" alt="ATTARIK Instagram">
+                    <div class="insta-overlay">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/attarik.in" target="_blank" rel="noopener" class="insta-item" id="insta-item-4">
+                    <img src="images/bottle-oud.png" alt="ATTARIK Instagram">
+                    <div class="insta-overlay">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/attarik.in" target="_blank" rel="noopener" class="insta-item" id="insta-item-5">
+                    <img src="images/bottle-musk.png" alt="ATTARIK Instagram">
+                    <div class="insta-overlay">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/attarik.in" target="_blank" rel="noopener" class="insta-item" id="insta-item-6">
+                    <img src="images/hero-bg.png" alt="ATTARIK Instagram">
+                    <div class="insta-overlay">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </div>
+                </a>
+            </div>
+            <div class="insta-cta" data-animate="fade-up">
+                <a href="https://www.instagram.com/attarik.in" target="_blank" rel="noopener" class="btn btn-outline" id="follow-instagram-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    <span>Follow @attarik.in</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="section-container">
+            <div class="contact-grid">
+                <div class="contact-info-col" data-animate="fade-right">
+                    <div class="section-label">
+                        <span class="label-line"></span>
+                        <span>Get in Touch</span>
+                    </div>
+                    <h2 class="section-title">Let's<br><em>Connect</em></h2>
+                    <p class="contact-description">Have a question about our fragrances? Want to place a bulk order? Or simply want to share your experience? We'd love to hear from you.</p>
+
+                    <div class="contact-details">
+                        <a href="tel:+918787088432" class="contact-detail" id="contact-phone">
+                            <div class="contact-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            </div>
+                            <div>
+                                <strong>Call Us</strong>
+                                <span>+91 8787088432</span>
+                            </div>
+                        </a>
+                        <a href="https://wa.me/918787088432" target="_blank" class="contact-detail" id="contact-whatsapp">
+                            <div class="contact-icon whatsapp-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            </div>
+                            <div>
+                                <strong>WhatsApp</strong>
+                                <span>Chat with us directly</span>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/attarik.in" target="_blank" class="contact-detail" id="contact-instagram">
+                            <div class="contact-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                            </div>
+                            <div>
+                                <strong>Instagram</strong>
+                                <span>@attarik.in</span>
+                            </div>
+                        </a>
+                        <div class="contact-detail" id="contact-email-detail">
+                            <div class="contact-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div>
+                                <strong>Email</strong>
+                                <span>contact@attarik.in</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-col" data-animate="fade-left">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="contact-name" name="name" required placeholder=" ">
+                            <label for="contact-name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="contact-email" name="email" required placeholder=" ">
+                            <label for="contact-email">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="contact-phone-input" name="phone" placeholder=" ">
+                            <label for="contact-phone-input">Phone Number</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="contact-subject" name="subject" required>
+                                <option value="" disabled selected>Select a Subject</option>
+                                <option value="inquiry">Product Inquiry</option>
+                                <option value="order">Place an Order</option>
+                                <option value="bulk">Bulk Order</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="contact-message" name="message" rows="4" required placeholder=" "></textarea>
+                            <label for="contact-message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="contact-submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loader" style="display:none;">
+                                <span class="loader-dot"></span>
+                                <span class="loader-dot"></span>
+                                <span class="loader-dot"></span>
+                            </span>
+                        </button>
+                        <div class="form-status" id="form-status"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Band -->
+    <section class="newsletter-band">
+        <div class="section-container">
+            <div class="newsletter-content" data-animate="fade-up">
+                <h3>Join the ATTARIK Family</h3>
+                <p>Subscribe for exclusive launches, fragrance tips, and members-only offers.</p>
+                <form class="newsletter-form" id="newsletter-form">
+                    <div class="newsletter-input-group">
+                        <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn btn-primary" id="newsletter-submit-btn">Subscribe</button>
+                    </div>
+                    <div class="newsletter-status" id="newsletter-status"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="section-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span class="footer-logo">ATTARIK</span>
+                    <p class="footer-tagline">The Art of Scent</p>
+                    <p class="footer-desc">Premium luxury fragrances crafted with rare ingredients and timeless artistry. Experience elegance in every note.</p>
+                    <div class="footer-socials">
+                        <a href="https://www.instagram.com/attarik.in" target="_blank" rel="noopener" aria-label="Instagram" id="footer-instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="https://wa.me/918787088432" target="_blank" rel="noopener" aria-label="WhatsApp" id="footer-whatsapp">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        </a>
+                        <a href="tel:+918787088432" aria-label="Phone" id="footer-phone">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#collection">Collection</a></li>
+                        <li><a href="#scent-finder">Find Your Scent</a></li>
+                        <li><a href="#craftsmanship">Craftsmanship</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Our Fragrances</h4>
+                    <ul>
+                        <li><a href="#collection">Noir Absolu</a></li>
+                        <li><a href="#collection">Rose Elixir</a></li>
+                        <li><a href="#collection">Royal Oud</a></li>
+                        <li><a href="#collection">White Musk</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:+918787088432">+91 8787088432</a></li>
+                        <li><a href="mailto:contact@attarik.in">contact@attarik.in</a></li>
+                        <li><a href="https://www.instagram.com/attarik.in" target="_blank">@attarik.in</a></li>
+                        <li><a href="https://wa.me/918787088432" target="_blank">WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ATTARIK. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms</a></p>
+                <p class="footer-made">Crafted with ♥ for lovers of fine fragrance</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/918787088432?text=Hi%2C%20I'm%20interested%20in%20ATTARIK%20fragrances" target="_blank" class="whatsapp-float" id="whatsapp-float" aria-label="Chat on WhatsApp">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span class="whatsapp-tooltip">Chat with us!</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
