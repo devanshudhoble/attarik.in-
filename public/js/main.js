@@ -255,7 +255,7 @@
     if (!ctx) return;
 
     const PARTICLE_COUNT = 80;
-    const COLOR = 'rgb(201, 169, 110)';
+    const COLOR = 'rgb(255, 255, 255)';
     let particles = [];
     let animId = null;
 
@@ -530,37 +530,37 @@
     const answers = { mood: '', occasion: '', family: '' };
 
     const scents = {
-      'Noir Absolu': {
-        image: 'images/bottle-noir.png',
-        desc: 'A commanding blend of oud, rose, and saffron. Bold, intense, and unforgettable.',
-        link: 'https://wa.me/918787088432?text=Hi%2C%20I\'m%20interested%20in%20ATTARIK%20Noir%20Absolu',
+      'Ni8t Moon': {
+        image: 'images/night-moon.png',
+        desc: 'A refreshing scent that defines your presence. A rich combination of lavender, jasmine, and deep amber.',
+        link: 'https://wa.me/918787088432?text=Hi%2C%20I\'m%20interested%20in%20ATTARIK%20Ni8t%20Moon%2030ml',
       },
-      'Rose Elixir': {
-        image: 'images/bottle-rose.png',
-        desc: 'An elegant symphony of Damask rose and peony. Graceful and timelessly feminine.',
-        link: 'https://wa.me/918787088432?text=Hi%2C%20I\'m%20interested%20in%20ATTARIK%20Rose%20Elixir',
+      'Love With You': {
+        image: 'images/love-with-you.png',
+        desc: 'An elegant symphony of citrus and fresh floral notes layered over white musk and warm amber.',
+        link: 'https://wa.me/918787088432?text=Hi%2C%20I\'m%20interested%20in%20ATTARIK%20Love%20With%20You%2010ml',
       },
-      'Royal Oud': {
-        image: 'images/bottle-oud.png',
-        desc: 'A deep journey through Assam oud and incense. Mysterious, regal, and captivating.',
-        link: 'https://wa.me/918787088432?text=Hi%2C%20I\'m%20interested%20in%20ATTARIK%20Royal%20Oud',
+      'Coffee Car Perfume': {
+        image: 'images/car-perfume-coffee.png',
+        desc: 'Elevate your ride with a long-lasting, roasted coffee bean and rich cocoa fragrance pod.',
+        link: 'https://wa.me/918787088432?text=Hi%2C%20I\'m%20interested%20in%20ATTARIK%20Coffee%20Car%20Perfume',
       },
-      'White Musk': {
-        image: 'images/bottle-musk.png',
-        desc: 'A clean embrace of white musk and jasmine. Fresh, pure, and effortlessly elegant.',
-        link: 'https://wa.me/918787088432?text=Hi%2C%20I\'m%20interested%20in%20ATTARIK%20White%20Musk',
+      'Aqua Car Perfume': {
+        image: 'images/car-perfume-hanging.png',
+        desc: 'A clean, uplifting sea breeze and cool mint hanging pod for a fresh and relaxing drive.',
+        link: 'https://wa.me/918787088432?text=Hi%2C%20I\'m%20interested%20in%20ATTARIK%20Aqua%20Car%20Perfume',
       },
     };
 
     function getResult() {
       const { mood, family } = answers;
 
-      if (mood === 'bold' || family === 'oriental') return 'Noir Absolu';
-      if (mood === 'romantic' || family === 'floral') return 'Rose Elixir';
-      if (mood === 'mysterious' || family === 'woody') return 'Royal Oud';
-      if (mood === 'fresh' || family === 'clean') return 'White Musk';
+      if (mood === 'bold' || family === 'oriental') return 'Ni8t Moon';
+      if (mood === 'romantic' || family === 'floral') return 'Love With You';
+      if (mood === 'mysterious' || family === 'woody') return 'Coffee Car Perfume';
+      if (mood === 'fresh' || family === 'clean') return 'Aqua Car Perfume';
 
-      return 'Noir Absolu'; // default
+      return 'Ni8t Moon'; // default
     }
 
     function transitionStep(from, to) {
