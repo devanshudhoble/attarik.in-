@@ -404,6 +404,7 @@ html {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  filter: grayscale(100%) brightness(0.65) contrast(1.15);
 }
 
 .hero-overlay {
@@ -1026,6 +1027,7 @@ html {
   background-attachment: fixed;
   background-repeat: no-repeat;
   transform: scale(1.1);
+  filter: grayscale(100%) brightness(0.5) contrast(1.1);
 }
 
 @supports (-webkit-touch-callout: none) {
